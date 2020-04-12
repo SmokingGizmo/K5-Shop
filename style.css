@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+}
+
+h1 {
+    padding: 0px;
+    margin-left: 350px;
+    margin-right: 750px;
+    margin-top: 37px;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 36px;
+}
+
+ul {
+    float: right;
+    padding: 0px;
+    margin-right: 125px;
+    margin-top: 45px;
+    list-style: none;   
+}
+
+a {
+    color: black;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 28px;
+    text-decoration: none;
+}
+
