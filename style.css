@@ -1,6 +1,18 @@
+@media screen and (max-width: 1024px) {
+    div.shop-grid-feature {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 body {
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -10,9 +22,10 @@ header {
     border-left: none;
     border-bottom-style: solid;
     border-width: 2px;
+    width: 100vw;
 }
 
-h1 {
+a.Rubrik {
     padding: 0px;
     margin-left: 250px;
     margin-right: 750px;
@@ -56,12 +69,56 @@ div.figure-item {
     background-color: black;
 }
 
+div#shopping-cart {
+    display: grid;
+    
+    grid-template-rows: 1fr 1fr 1.5fr;
+    justify-content: center;
+    border-radius: 7px;
+
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    -moz-box-shadow: 0 0 4px black;
+    -webkit-box-shadow: 0 0 4px black;
+    box-shadow: 0 0 4px black;
+}
+
+div.support-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+article#q1 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+article#q2 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
 img.figure-picture {
     width: 178px;
     height: 250px;
     margin-bottom: 20px;
     margin: 2px;
     border-radius: 10px;
+}
+
+img#cart-image {
+    width: 40px;
+    height: 40px; 
+    margin-left: 20px;
+    
+    grid-row: 1;
+    grid-column: 1;
 }
 
 button.figure-button {
@@ -76,7 +133,25 @@ button.figure-button {
     outline: none;
 }
 
-p.figure-price {
+button#cart-button {
+    grid-row: 3;
+    grid-column: 1;
+    
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+span.cart-price {
+    grid-row: 2;
+    grid-column: 1;
+    
+    text-align: center;
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+span.figure-price {
     text-align: center;
     font-family: 'Crimson Pro', serif;
     font-size: 20px;
@@ -108,3 +183,25 @@ div#shop-catalog {
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
 }
+
+h2.question {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 32px;
+    color: red;
+}
+
+p.answer {
+    font-size: 24px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+a#shop {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: black;
+    border-radius: 7px;
+    color: white;
+}
+
